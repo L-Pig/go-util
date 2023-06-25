@@ -53,7 +53,7 @@ func StartPage[T any](pageIndex, pageSize int, query *gorm.DB) *PageModel[T] {
 }
 
 // calcPage 计算总页数
-// 使用线上取整，避免最后一页不足 pageSize 时无法显示
+// 使用向上取整，避免最后一页不足 pageSize 时无法显示
 func calcPage(total int64, pageSize int) int {
 	return int(math.Ceil(float64(total) / float64(pageSize)))
 }
