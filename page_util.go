@@ -1,4 +1,4 @@
-package github.com/l-pig/go-util
+package go-util
 
 import (
 	"errors"
