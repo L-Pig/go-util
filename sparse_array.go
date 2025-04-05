@@ -1,4 +1,4 @@
-package go-util
+package g-util
 
 import "fmt"
 
